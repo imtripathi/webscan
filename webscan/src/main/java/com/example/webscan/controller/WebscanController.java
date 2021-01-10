@@ -13,13 +13,10 @@ import com.example.webscan.service.WebScanService;
 public class WebscanController {
 	@Autowired
 	private WebScanService webScan;
-	
-	
+
 	@GetMapping("getwords")
 	public String getWords(@RequestParam String url) {
-		
-		
-		
+
 		return webScan.getWords(url);
 	}
 }
